@@ -3,13 +3,9 @@ a shitty epub reader
 
 it's an experiment
 
-python 3.7.7
+used libraries for python 3.7.7
 
-pywebview
-
-ebooklib
-
-bs4
+pywebview, ebooklib, bs4
 
 it works by doing unnecessary stuff, processing the epub files from byte string to normal epub xhtml because I suck
 at using that wonderful documented piece of code called ebooklib 
