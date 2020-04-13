@@ -35,15 +35,6 @@ def clean_html(text):
     return text
 
 
-# a = '##\xc2\xa7 PENIS \xe2\x80\x9c#'
-# a = "b'<?xml version=\'1.0\' encoding=\'utf-8\'?>\n<!DOCTYPE html>\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:epub=\"http://www.idpf.org/2007/ops\" epub:prefix=\"z3998: http://www.daisy.org/z3998/2012/vocab/structure/#\" lang=\"en\" xml:lang=\"en\">\n  <head/>\n  <body><h1 style=\"text-align: center;\">Konosuba Volume 1: Ah My Useless\xc2\xa0Goddess</h1>&#13;\n#"
-# a = "##Konosuba Volume 1: Ah My Useless\xc2\xa0Goddess</h1>&#13;\n#"
-# a = "##you\xe2\x80\x99ve died#"
-# a = '<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html><html xmlns="http:/www.w3.org/1999/xhtml" xmlns:epub="http:/www.idpf.org/2007/ops" epub:prefix="z3998: http:/www.daisy.org/z3998/2012/vocab/structure/#" lang="en" xml:lang="en">  <head/>  <body><h1 style="text-align: center;">Konosuba Volume 1: Ah My Useless\xc2\xa0Goddess</h1> '
-# a = 'ht\xe2\x80\x99ve been sho'
-# b = clean_html(a)
-# print(b)
-
 def provide_images(text, path, screensize):
     print(f"### DEBUG: processing.py: provide_images() path: {path} ###")
     print(f"### DEBUG: processing.py: provide_images() screensize: {screensize} ###")
@@ -109,5 +100,4 @@ def provide_images(text, path, screensize):
     gc.collect()
     return text
 
-#provide_images(''' <p><img alt="ln5" src="../Images/ln5.png"/><br/></p>  ''', "D:\\Dokumente\\PycharmProjects\\ePubly\\assets\\konosuba.epub", (614, 885))
-# text = text.replace("")
+
